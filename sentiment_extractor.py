@@ -16,7 +16,7 @@ def get_data(begin, end):
         # Define the headers
         headers = {
             "Accept": "application/json",
-            "token": "zJlfwPKOyEXRL4JSiRW0OCMfFMR0RY2g"
+            "token": ""
         }
         r = requests.get(url, headers=headers, params=params, allow_redirects=True)
         open(f'sentiment_data/{i_str}_01_to_{i_str}_06.json', 'wb').write(r.content)
@@ -33,7 +33,7 @@ def get_data(begin, end):
         # Define the headers
         headers = {
             "Accept": "application/json",
-            "token": "zJlfwPKOyEXRL4JSiRW0OCMfFMR0RY2g"
+            "token": ""
         }
         r = requests.get(url, headers=headers, params=params, allow_redirects=True)
         open(f'sentiment_data/{i_str}_07_to_{i_str}_12.json', 'wb').write(r.content)
