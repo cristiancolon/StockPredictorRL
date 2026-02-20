@@ -83,6 +83,9 @@ mv sentiments_2016_to_2024.csv aggr_data/
   - Trains an LSTM for price prediction (optionally using VMD for signal decomposition).
   - Saves model as `trained_models/LSTM_Price_Predictor_Trial.keras`.
   - Produces `graphs/lstm_testing_results.png`.
+
+![LSTM Testing Results](graphs/lstm_testing_results.png)
+
   - Exports a joined dataset (e.g., `aggr_data/all_data.csv`) with columns such as `timestamp`, `close`, `Predictions_lstm`, `sentiment_score`.
 
 3) Run the rule-based trading bot
